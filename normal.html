@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tes Magic</title>
+		<meta charset="utf8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+		<script>
+		  new VConsole
+		</script>
+	</head>
+	<body>
+
+<style>
+* {
+	tab-size: 2;
+}
+</style>
+
+<!-- Mermaid -->
+
+<script src="https://unpkg.com/mermaid@8.13.10/dist/mermaid.min.js"></script>
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<!-- Highlight -->
+
+<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+
+<pre><code class="language-css">.nama {
+	color: blue;
+	background: red;
+}</code></pre>
+
+<script>hljs.highlightAll();</script>
+
+	</body>
+</html>
